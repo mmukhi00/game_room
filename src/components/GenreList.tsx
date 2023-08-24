@@ -15,8 +15,8 @@ interface Props{
 
 const GenreList = ({selectedGenere,onSelectGenre}:Props) => {
     const{data,isloading,error}=useGenres()
-    if(error) return null
-    if (isloading) return <Spinner/>
+    // if(error) return null
+    // if (isloading) return <Spinner/>
   return (
    <Stack spacing={2}>
     

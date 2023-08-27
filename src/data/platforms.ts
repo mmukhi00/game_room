@@ -1,0 +1,16 @@
+export default [ 
+    {id: 1, name: 'PC', slug: 'pc', platforms: Array(1)},
+    {id: 2, name: 'PlayStation', slug: 'playstation', platforms: Array(7)} ,
+    {id: 3, name: 'Xbox', slug: 'xbox', platforms: Array(4)},
+    {id: 4, name: 'iOS', slug: 'ios', platforms: Array(1)},
+    {id: 8, name: 'Android', slug: 'android', platforms: Array(1)},
+    {id: 5, name: 'Apple Macintosh', slug: 'mac', platforms: Array(3)},
+    {id: 6, name: 'Linux', slug: 'linux', platforms: Array(1)},
+    {id: 7, name: 'Nintendo', slug: 'nintendo', platforms: Array(13)},
+    {id: 9, name: 'Atari', slug: 'atari', platforms: Array(9)},
+    {id: 10, name: 'Commodore / Amiga', slug: 'commodore-amiga', platforms: Array(1)},
+    {id: 11, name: 'SEGA', slug: 'sega', platforms: Array(7)},
+    {id: 12, name: '3DO', slug: '3do', platforms: Array(1)},
+    {id: 13, name: 'Neo Geo', slug: 'neo-geo', platforms: Array(1)},
+    {id: 14, name: 'Web', slug: 'web', platforms: Array(1)},
+ ]

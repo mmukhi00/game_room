@@ -10,10 +10,10 @@ import { Stack } from '@chakra-ui/react'
 
 interface Props{
     onSelectGenre:(genre:Genres)=>void,
-    selectedGenere:Genres|null
+    selectedGenereId?:number
 }
 
-const GenreList = ({selectedGenere,onSelectGenre}:Props) => {
+const GenreList = ({selectedGenereId,onSelectGenre}:Props) => {
     const{data,isLoading,error}=useGenres()
     // if(error) return null
     // if (isloading) return <Spinner/>
@@ -26,7 +26,7 @@ const GenreList = ({selectedGenere,onSelectGenre}:Props) => {
         <ListItem key={genre.id} paddingY='5px'>
             <HStack>
                 <Image objectFit='cover' boxSize='32px' borderRadius={8} src={getCroppedUrl(genre.image_background)}/>
-                <Button whiteSpace='normal' textAlign='left' fontWeight={selectedGenere?.id==genre.id? 'bold':'normal'} onClick={()=>onSelectGenre(genre)} variant='link' fontSize='lg'>{genre.name}</Button>
+                <Button whiteSpace='normal' textAlign='left' fontWeight={genre?.id==selectedGenereId? 'bold':'normal'} onClick={()=>onSelectGenre(genre)} variant='link' fontSize='lg'>{genre.name}</Button>
             </HStack>
         </ListItem>)
         }

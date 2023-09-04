@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Image, CardBody, Heading } from "@chakra-ui/react";
-import { Games } from "../hooks/useGames";
+import { Games } from "../entities/Games";
 import PlatformIconList from "./PlatformIconList";
 import CriticScore from "./CriticScore";
 import { HStack } from "@chakra-ui/react";

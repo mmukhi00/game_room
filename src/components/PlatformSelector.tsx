@@ -3,7 +3,7 @@ import React from 'react'
 import {Button,MenuButton,Menu,MenuList,MenuItem} from '@chakra-ui/react'
 import { BsChevronDown } from 'react-icons/bs'
 import usePlatform  from '../hooks/usePlatform'
-import { Platform } from "../entities/Platform"
+import Platform  from "../entities/Platform"
 import usePlatformById from '../hooks/usePlatformById'
 import useGameQueryStore from '../store'
 
